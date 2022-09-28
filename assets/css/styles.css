@@ -1,11 +1,11 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
+/*=============== variáveis CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /*========== Cores==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(228, 66%, 53%);
   --first-color-alt: hsl(228, 66%, 47%);
@@ -19,7 +19,7 @@
   --body-color: #fff;
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
+  /*========== Font and tipografia ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
@@ -30,7 +30,7 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*========== Peso da Fonte ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
@@ -39,7 +39,7 @@
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+/* Tipografia Responsiva */
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 4rem;
@@ -96,7 +96,7 @@ button {
   border: none;
 }
 
-/*=============== THEME ===============*/
+/*=============== TEMA ===============*/
 .change-theme{
   font-size: 1.25rem;
   color: #fff;
@@ -111,7 +111,7 @@ button {
 
 
 
-/*========== Variables Dark theme ==========*/
+/*========== variáveis para o tema escuro ==========*/
 body.dark-theme{
   --first-color: hsl(228, 66%, 53%);
   --second-color: hsl(25, 57%, 54%);
@@ -125,8 +125,7 @@ body.dark-theme{
 
 
 /*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
+    Cores mudam quando trocar de tema
 ==========*/
 .dark-theme .home__search,
 .dark-theme .swiper-button-next,
@@ -177,7 +176,7 @@ body.dark-theme{
 }
 
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== Classes reutilazaveís do CSS ===============*/
 .container {
   max-width: 1024px;
   margin-left: 1.5rem;
@@ -211,7 +210,7 @@ body.dark-theme{
   overflow: hidden; /* For the animations ScrollReveal*/
 }
 
-/*=============== HEADER & NAV ===============*/
+/*=============== HEADER & NAV-BAR ===============*/
 
 .header{
   position: fixed;
@@ -284,7 +283,7 @@ body.dark-theme{
 
 
 
-/* Change background header */
+/* Trocar o background do header */
 .scroll-header{
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
@@ -299,7 +298,7 @@ body.dark-theme{
   color: var(--title-color);
 }
 
-/* Active link */
+/* Link para trocar de tema */
 .active__link{
   background: linear-gradient(101deg
             hsl(228,66%,53%)
@@ -458,7 +457,7 @@ body.dark-theme{
   opacity: .9;
 }
 
-/*=============== POPULAR ===============*/
+/*=============== PROFISSIONAIS ===============*/
 
 
 .popular__container{
@@ -533,7 +532,7 @@ body.dark-theme{
 }
 
 
-/*=============== VALUE ===============*/
+/*=============== DESCRIÇÃO DAS BADGES ===============*/
 
 .value__container {
 row-gap:  1rem;
@@ -649,10 +648,7 @@ row-gap:  1rem;
   transform: rotate(-180deg);
 }
 
-
-/*=============== CONTACT ===============*/
-
-/*=============== SUBSCRIBE ===============*/
+/*=============== CADASTRO ===============*/
 .subscribe{
 padding: 2.5rem 0;
 }
@@ -784,7 +780,7 @@ padding: 2.5rem 0;
 
 
 
-/*=============== SCROLL BAR ===============*/
+/*=============== SCROLL BARRA ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
   border-radius: .5rem;
@@ -832,8 +828,8 @@ bottom: 8rem;
 
 
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/*=============== BREAKPOINTS DE RESPONSIVIDADE ===============*/
+/* Para aparelhos pequenos */
 @media screen and (max-width: 350px){
   .container{
     margin-left: 1rem;
@@ -906,7 +902,7 @@ bottom: 8rem;
 
 
 
-/* For medium devices */
+/* Para aparelhos médios */
 
 @media screen and (min-width: 576px){
   .nav__menu{
@@ -972,7 +968,7 @@ bottom: 8rem;
 }
 
 
-/* For large devices */
+/* Para aparelhos grandes ou largos */
 
 @media screen and (min-width: 1023px){
   .section{
@@ -1174,7 +1170,7 @@ bottom: 8rem;
 }
 
 
-/* For 2K & 4K resolutions */
+/* Para resolução entre 2k a 8k */
 @media screen and (min-width: 2048px){
     body{
       zoom: 1.5;
